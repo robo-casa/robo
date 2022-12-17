@@ -1,0 +1,12 @@
+{
+  // used mainly for eslint inclusion
+  "extends": "./tsconfig.base.json",
+  "exclude": [
+    "packages/**/*",
+    "apps/**/*",
+    "node_modules",
+    "**/node_modules",
+    ".next"
+  ],
+  "include": [".eslintrc.js", ".prettierrc.js", "commitlint.config.js"]
+}

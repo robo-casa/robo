@@ -1,0 +1,61 @@
+{
+  "eslint.workingDirectories": [
+    {
+      "directory": "./"
+    },
+    {
+      "pattern": "./packages/*/",
+      "!cwd": false
+    },
+    {
+      "pattern": "./apps/*/",
+      "!cwd": false
+    }
+  ],
+
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true,
+    "node_modules": true,
+    "**/node_modules": true
+  },
+  "vsicons.associations.files": [
+    {
+      "icon": "tsconfig",
+      "filenamesGlob": ["tsconfig.composite"],
+      "format": "svg",
+      "extensionsGlob": ["json"],
+      "filename": true
+    }
+  ],
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "html.customData": [".vscode/tags.html-data.json"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.files.exclude": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/.next/**",
+    "**/.wip/**",
+    "**/.yarn/**",
+    "**/.vscode/**",
+    "**/.git/**",
+    "**/public/**",
+    "**/.swc/**",
+    "**/@types/**",
+    "**/.artifacts/**"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "editor.formatOnPaste": false, // required
+  "editor.formatOnType": false, // required
+  "editor.formatOnSave": true, // optional
+  "editor.formatOnSaveMode": "file",
+  "debug.autoExpandLazyVariables": true,
+  "eslint.packageManager": "yarn",
+  "eslint.useESLintClass": true
+  // "files.autoSave": "onFocusChange" // optional but recommended
+}
